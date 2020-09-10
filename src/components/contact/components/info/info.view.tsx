@@ -17,6 +17,10 @@ export const ContactInfo = () => {
     window.location.href = "mailto:" + email
   }
 
+  const callPhone = () => {
+    var phone = MyInfo.PHONE
+    window.location.href = "tel:" + phone
+  }
   return (
     <div className={classes.root}>
       <Grid
@@ -34,7 +38,12 @@ export const ContactInfo = () => {
           />
         </Grid>
         <Grid item>
-          <ContactClip title="Phone" subtitle={MyInfo.PHONE} Logo={PhoneIcon} />
+          <ContactClip
+            title="Phone"
+            subtitle={MyInfo.PHONE}
+            Logo={PhoneIcon}
+            callback={callPhone}
+          />
         </Grid>
         <Grid item>
           <ContactClip

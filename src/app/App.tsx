@@ -2,7 +2,12 @@ import { createMuiTheme, MuiThemeProvider } from "@material-ui/core"
 import { blue, orange, teal } from "@material-ui/core/colors"
 import AOS from "aos"
 import React, { useEffect, useState } from "react"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import {
+  BrowserRouter,
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom"
 import NotFoundPage from "../components/404"
 import CustomDrawer from "../components/drawer"
 import { Main } from "../components/main/main.view"
@@ -58,7 +63,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router>
+    <BrowserRouter basename="/portfolio">
       <MuiThemeProvider theme={darkTheme}>
         <AppProvider>
           <CustomDrawer />
@@ -68,7 +73,7 @@ const App = () => {
           </Switch>
         </AppProvider>
       </MuiThemeProvider>
-    </Router>
+    </BrowserRouter>
     // <div style={{ background: "black", color: "white" }}>
     //   Hello World
     //   <ParticlesBg color="#ff0000" num={40} type="cobweb" bg={true} />

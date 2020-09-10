@@ -85,8 +85,8 @@ export const Projects = () => {
       {isOpen && (
         <Lightbox
           // reactModalStyle={{ zIndex: 100 }}
-          discourageDownloads
-          animationOnKeyInput
+          // discourageDownloads
+          // animationOnKeyInput
           mainSrc={images[photoIndex] ?? ""}
           nextSrc={images[(photoIndex + 1) % images.length] ?? ""}
           prevSrc={
