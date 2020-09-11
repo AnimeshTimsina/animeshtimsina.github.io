@@ -1,20 +1,15 @@
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core"
-import { blue, orange, teal } from "@material-ui/core/colors"
+import { blue, orange } from "@material-ui/core/colors"
 import AOS from "aos"
-import React, { useEffect, useState } from "react"
-import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from "react-router-dom"
+import React, { useEffect } from "react"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import NotFoundPage from "../components/404"
 import CustomDrawer from "../components/drawer"
 import { Main } from "../components/main/main.view"
 import { baseTheme } from "./App.styles"
 import { AppProvider } from "./context"
 
-let darkTheme = createMuiTheme({
+let theme = createMuiTheme({
   ...baseTheme,
   palette: {
     type: "dark",
@@ -31,30 +26,7 @@ let darkTheme = createMuiTheme({
   },
 })
 
-let lightTheme = createMuiTheme({
-  ...baseTheme,
-  palette: {
-    type: "light",
-    secondary: {
-      main: orange[500],
-    },
-    primary: {
-      main: teal[500],
-    },
-  },
-})
-
 const App = () => {
-  let currentMode = localStorage.getItem("darkMode")
-  let defaultTheme: boolean =
-    currentMode !== null ? JSON.parse(currentMode) : false
-
-  const [darkMode, setDarkMode] = useState<boolean>(defaultTheme)
-
-  const toggleDarkMode = () => {
-    localStorage.setItem("darkMode", JSON.stringify(!darkMode))
-    setDarkMode(!darkMode)
-  }
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -64,7 +36,7 @@ const App = () => {
 
   return (
     <BrowserRouter basename="/portfolio">
-      <MuiThemeProvider theme={darkTheme}>
+      <MuiThemeProvider theme={theme}>
         <AppProvider>
           <CustomDrawer />
           <Switch>

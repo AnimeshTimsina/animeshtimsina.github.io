@@ -1,4 +1,3 @@
-import classes from "*.module.css"
 import { Backdrop, CircularProgress } from "@material-ui/core"
 import React from "react"
 import { useStyles } from "./spinner.styles"

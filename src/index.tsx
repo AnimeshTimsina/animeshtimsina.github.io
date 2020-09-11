@@ -5,12 +5,16 @@ import ReactDOM from "react-dom"
 import "react-image-lightbox/style.css"
 import App from "./app/App"
 import "./index.css"
+// import Firebase, { FirebaseContext } from "firebase"
 
 process.env.REACT_APP_MAIL_USER_ID && init(process.env.REACT_APP_MAIL_USER_ID)
 
 ReactDOM.render(
   // <React.StrictMode>
+  // <FirebaseContext.Provider value={new Firebase()}>
   <App />,
+  // </FirebaseContext.Provider>,
+
   // </React.StrictMode>,
   document.getElementById("root")
 )

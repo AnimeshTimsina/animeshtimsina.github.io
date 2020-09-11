@@ -59,7 +59,11 @@ export const ProjectCard: React.FC<projectCardProps> = ({
                   root: classes.listItemIcon,
                 }}
               >
-                <img src={item.Logo} className={classes.logo} />
+                <img
+                  src={item.Logo}
+                  className={classes.logo}
+                  alt={item.title}
+                />
                 {/* <item.Logo className={classes.logo} /> */}
               </ListItemIcon>
               <ListItemText
