@@ -35,17 +35,13 @@ const App = () => {
   }, [])
 
   return (
-    <BrowserRouter basename="/portfolio">
-      <MuiThemeProvider theme={theme}>
-        <AppProvider>
-          <CustomDrawer />
-          <Switch>
-            <Route exact path="/" component={Main} />
-            <Route component={NotFoundPage} />
-          </Switch>
-        </AppProvider>
-      </MuiThemeProvider>
-    </BrowserRouter>
+    <MuiThemeProvider theme={theme}>
+      <AppProvider>
+        <CustomDrawer />
+        <Main />
+      </AppProvider>
+    </MuiThemeProvider>
+
     // <div style={{ background: "black", color: "white" }}>
     //   Hello World
     //   <ParticlesBg color="#ff0000" num={40} type="cobweb" bg={true} />
