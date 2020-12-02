@@ -13,7 +13,7 @@ import disease_1 from "images/projects/disease/1.png"
 import disease_2 from "images/projects/disease/2.png"
 import DiseaseBackground from "images/projects/disease/cover.png"
 import InventoryBackground from "images/projects/inventory/cover.png"
-import LandBackground from "images/projects/land/cover.png"
+// import LandBackground from "images/projects/land/cover.png"
 import restro_1 from "images/projects/restaurant/1.png"
 import restro_2 from "images/projects/restaurant/2.png"
 import restro_3 from "images/projects/restaurant/3.png"
@@ -23,6 +23,8 @@ import restro_6 from "images/projects/restaurant/6.png"
 import restro_7 from "images/projects/restaurant/7.png"
 import restro_8 from "images/projects/restaurant/8.png"
 import restro_9 from "images/projects/restaurant/9.png"
+import restro_10 from "images/projects/restaurant/10.png"
+
 import RestaurantBackground from "images/projects/restaurant/cover.png"
 import tourism_1 from "images/projects/tourism/1.jpg"
 import TourismBackground from "images/projects/tourism/cover.jpg"
@@ -34,14 +36,19 @@ import reactLogo from "images/React.svg"
 import restLogo from "images/rest.svg"
 import tensorflowLogo from "images/tensorflow.svg"
 import truffleLogo from "images/truffle.svg"
+import riskCover from "images/projects/risk/cover.png"
+import risk1 from "images/projects/risk/1.png"
+import risk2 from "images/projects/risk/2.png"
+import risk3 from "images/projects/risk/3.png"
+import risk4 from "images/projects/risk/4.png"
+import risk5 from "images/projects/risk/5.png"
 
 export const projectsData: Array<projectCardProps> = [
   {
     id: "1",
-    title:
-      "Inventory Management for ICTC and Department of Electroncis and Computer Engineering",
-    background: InventoryBackground,
-    images: [InventoryBackground],
+    title: "Risk Assessments based on Dutch Law",
+    background: riskCover,
+    images: [riskCover, risk1, risk2, risk3, risk4, risk5],
     frameworks: [
       {
         id: "1",
@@ -50,13 +57,18 @@ export const projectsData: Array<projectCardProps> = [
       },
       {
         id: "2",
-        title: "PostgreSQL",
-        Logo: postgresqlLogo,
+        title: "React JS",
+        Logo: reactLogo,
       },
       {
         id: "3",
-        title: "ChartJS",
-        Logo: chartjsLogo,
+        title: "GraphQL",
+        Logo: graphQLLogo,
+      },
+      {
+        id: "4",
+        title: "MaterialUI Kit",
+        Logo: materialUILogo,
       },
     ],
   },
@@ -67,6 +79,7 @@ export const projectsData: Array<projectCardProps> = [
     images: [
       RestaurantBackground,
       restro_1,
+      restro_10,
       restro_2,
       restro_3,
       restro_4,
@@ -102,6 +115,30 @@ export const projectsData: Array<projectCardProps> = [
   {
     id: "3",
     title:
+      "Inventory Management for ICTC and Department of Electroncis and Computer Engineering",
+    background: InventoryBackground,
+    images: [InventoryBackground],
+    frameworks: [
+      {
+        id: "1",
+        title: "Django",
+        Logo: djangoLogo,
+      },
+      {
+        id: "2",
+        title: "PostgreSQL",
+        Logo: postgresqlLogo,
+      },
+      {
+        id: "3",
+        title: "ChartJS",
+        Logo: chartjsLogo,
+      },
+    ],
+  },
+  {
+    id: "4",
+    title:
       "Image Processing and Pattern Recognition of Chest XRay and OCT Images for Disease Prediction",
     background: DiseaseBackground,
     images: [disease_1, disease_2],
@@ -129,7 +166,7 @@ export const projectsData: Array<projectCardProps> = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Tourism Nepal - Visit Nepal 2020 Application",
     background: TourismBackground,
     images: [TourismBackground, tourism_1],
@@ -157,7 +194,7 @@ export const projectsData: Array<projectCardProps> = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "Decentralized Voting System using Ethereum Blockchain",
     background: ElectionBackground,
     images: [ElectionBackground, election_2, election_3, election_4],
@@ -185,25 +222,30 @@ export const projectsData: Array<projectCardProps> = [
     ],
   },
   {
-    id: "6",
-    title: "Decentralized Land Market based on Ethereum Blockchain",
-    background: LandBackground,
-    images: [LandBackground],
+    id: "7",
+    title: "Risk Assessments based on Dutch Law",
+    background: riskCover,
+    images: [riskCover, risk1, risk2, risk3, risk4, risk5],
     frameworks: [
       {
         id: "1",
-        title: "Node JS",
-        Logo: nodeLogo,
+        title: "Django",
+        Logo: djangoLogo,
       },
       {
         id: "2",
-        title: "Truffle (Ethereum)",
-        Logo: truffleLogo,
+        title: "React JS",
+        Logo: reactLogo,
       },
       {
         id: "3",
-        title: "Metamask",
-        Logo: metamaskLogo,
+        title: "GraphQL",
+        Logo: graphQLLogo,
+      },
+      {
+        id: "4",
+        title: "MaterialUI Kit",
+        Logo: materialUILogo,
       },
     ],
   },
