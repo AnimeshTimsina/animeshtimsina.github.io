@@ -246,32 +246,4 @@ export const projectsData: Array<projectCardProps> = [
       },
     ],
   },
-  {
-    id: "7",
-    title: "Risk Assessments based on Dutch Law",
-    background: riskCover,
-    images: [riskCover, risk1, risk2, risk3, risk4, risk5],
-    frameworks: [
-      {
-        id: "1",
-        title: "Django",
-        Logo: djangoLogo,
-      },
-      {
-        id: "2",
-        title: "React JS",
-        Logo: reactLogo,
-      },
-      {
-        id: "3",
-        title: "GraphQL",
-        Logo: graphQLLogo,
-      },
-      {
-        id: "4",
-        title: "MaterialUI Kit",
-        Logo: materialUILogo,
-      },
-    ],
-  },
 ]
