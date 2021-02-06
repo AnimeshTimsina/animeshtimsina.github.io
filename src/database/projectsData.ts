@@ -42,13 +42,38 @@ import risk2 from "images/projects/risk/2.png"
 import risk3 from "images/projects/risk/3.png"
 import risk4 from "images/projects/risk/4.png"
 import risk5 from "images/projects/risk/5.png"
+import risk6 from "images/projects/risk/6.png"
+import risk7 from "images/projects/risk/7.png"
+import risk8 from "images/projects/risk/8.png"
+import risk9 from "images/projects/risk/9.png"
+import risk10 from "images/projects/risk/10.png"
+import risk11 from "images/projects/risk/11.png"
+import risk12 from "images/projects/risk/12.png"
+import risk13 from "images/projects/risk/13.png"
+import risk14 from "images/projects/risk/14.png"
 
 export const projectsData: Array<projectCardProps> = [
   {
     id: "1",
     title: "Risk Assessments based on Dutch Law",
     background: riskCover,
-    images: [riskCover, risk1, risk2, risk3, risk4, risk5],
+    images: [
+      riskCover,
+      risk1,
+      risk2,
+      risk3,
+      risk4,
+      risk5,
+      risk6,
+      risk7,
+      risk8,
+      risk9,
+      risk10,
+      risk11,
+      risk12,
+      risk13,
+      risk14,
+    ],
     frameworks: [
       {
         id: "1",
