@@ -5,6 +5,8 @@ import ReactDOM from "react-dom"
 import "react-image-lightbox/style.css"
 import App from "./app/App"
 import "./index.css"
+import * as serviceWorker from "./serviceWorker"
+
 // import Firebase, { FirebaseContext } from "firebase"
 
 process.env.REACT_APP_MAIL_USER_ID && init(process.env.REACT_APP_MAIL_USER_ID)
@@ -22,4 +24,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.unregister()
+serviceWorker.register()
