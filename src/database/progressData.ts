@@ -11,13 +11,13 @@ export const ProgressData = [
   },
   {
     id: "2",
-    title: "1000+",
+    title: "1200+",
     content: "Cups of cofee drunk",
     image: LocalCafeIcon,
   },
   {
     id: "3",
-    title: "20+",
+    title: "25+",
     content: 'Node Modules "gitignored"',
     image: FolderOpenIcon,
   },

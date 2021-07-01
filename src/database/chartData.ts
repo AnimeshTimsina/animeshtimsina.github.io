@@ -9,6 +9,12 @@ export const ChartData: Array<progressValueProps> = [
   },
   {
     title: "React",
+    maxValue: 90,
+    initialValue: 0,
+    completed: false,
+  },
+  {
+    title: "Flutter",
     maxValue: 85,
     initialValue: 0,
     completed: false,
@@ -26,13 +32,7 @@ export const ChartData: Array<progressValueProps> = [
     completed: false,
   },
   {
-    title: "React Native",
-    maxValue: 60,
-    initialValue: 0,
-    completed: false,
-  },
-  {
-    title: "CSS",
+    title: "Node JS",
     maxValue: 75,
     initialValue: 0,
     completed: false,

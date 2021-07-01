@@ -1,37 +1,37 @@
 import { ReactComponent as DjangoLogo } from "images/Django.svg"
 import { ReactComponent as EthereumLogo } from "images/Ethereum.svg"
 import { ReactComponent as GraphQLLogo } from "images/GraphQL.svg"
-import { ReactComponent as MLLogo } from "images/ML.svg"
 import { ReactComponent as ReactLogo } from "images/React.svg"
+import { ReactComponent as FlutterLogo } from "images/flutter.svg"
 
 export const ServiceData = [
   {
     id: "1",
     image: ReactLogo,
-    title: "Front-end React",
+    title: "Frontend React",
     content:
-      "Because Angular sucks! Also, I always tend to use Typescript instead of Javascript just because error handling is so much easier. I do have a soft spot for Redux however Context API is my goto for state management",
+      "If you ever want a web application for your business or personal need, I got you covered. You can always provide me your wildest designs and I will build it exactly how you want it. Dynamic themes, complex animations, offline working....you name it.",
   },
   {
     id: "2",
     image: DjangoLogo,
-    title: "Backend Django",
+    title: "Backend",
     content:
-      "What more do you want if you can code your Backend in Python. The code is pragmatic, maintainable and clean and I can always integrate my machine learning models in Django out of the box! ",
+      "Want a solid backend for your project to make it run in any device that you can think of. I got you covered. Database design, authentication, push notifications, server side rendering...",
   },
   {
     id: "3",
     image: GraphQLLogo,
     title: "GraphQL (coz' REST sucks)",
     content:
-      "Gone are the days of over-fetching data from REST API calls! GraphQL is efficient, flexible, works well with Javascript, solves overfetching, and once the schema is defined, frontend and backend teams can work independently from one another",
+      "Gone are the days of over-fetching data from REST API calls! GraphQL is efficient, flexible, solves overfetching and works well with Typescript.",
   },
   {
     id: "4",
-    image: MLLogo,
-    title: "Machine Learning",
+    image: FlutterLogo,
+    title: "Mobile",
     content:
-      "Want a Machine Learning system for forecasting sales of your business? Want a Chatbot to interact with your customers? Want a Recommendation System based on Customer Segmentation? You are in the right place!",
+      "Want a high performant, modern-looking native mobile application for your business? You have come to the right place. And also, don't worry about iOS or Android cuz I use Flutter! ",
   },
   {
     id: "5",
